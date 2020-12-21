@@ -21,7 +21,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Locale;
 
-import io.reactivex.Single;
+import io.reactivex.rxjava3.core.Single;
 
 import static org.mockito.Matchers.any;
 import static org.mockito.Mockito.doReturn;

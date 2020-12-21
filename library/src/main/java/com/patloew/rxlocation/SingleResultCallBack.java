@@ -1,12 +1,12 @@
 package com.patloew.rxlocation;
 
-import android.support.annotation.NonNull;
+import androidx.annotation.NonNull;
 
 import com.google.android.gms.common.api.Result;
 import com.google.android.gms.common.api.ResultCallback;
 
-import io.reactivex.SingleEmitter;
-import io.reactivex.functions.Function;
+import io.reactivex.rxjava3.core.SingleEmitter;
+import io.reactivex.rxjava3.functions.Function;
 
 /* Copyright 2016 Patrick Löwenstein
  *
@@ -49,7 +49,7 @@ class SingleResultCallBack<T extends Result, R> implements ResultCallback<T> {
         } else {
             try {
                 emitter.onSuccess(mapper.apply(result));
-            } catch (Exception e) {
+            } catch (Throwable e) {
                 emitter.onError(e);
             }
         }

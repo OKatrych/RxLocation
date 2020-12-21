@@ -21,9 +21,9 @@ import org.mockito.MockitoAnnotations;
 
 import java.util.Arrays;
 
-import io.reactivex.Maybe;
-import io.reactivex.Observable;
-import io.reactivex.Single;
+import io.reactivex.rxjava3.core.Maybe;
+import io.reactivex.rxjava3.core.Observable;
+import io.reactivex.rxjava3.core.Single;
 
 import static org.mockito.Matchers.eq;
 import static org.mockito.Mockito.doReturn;

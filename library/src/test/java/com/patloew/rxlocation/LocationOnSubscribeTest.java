@@ -21,10 +21,10 @@ import org.powermock.api.mockito.PowerMockito;
 import org.powermock.core.classloader.annotations.PrepareOnlyThisForTest;
 import org.powermock.modules.junit4.PowerMockRunner;
 
-import io.reactivex.BackpressureStrategy;
-import io.reactivex.Flowable;
-import io.reactivex.Maybe;
-import io.reactivex.Single;
+import io.reactivex.rxjava3.core.BackpressureStrategy;
+import io.reactivex.rxjava3.core.Flowable;
+import io.reactivex.rxjava3.core.Maybe;
+import io.reactivex.rxjava3.core.Single;
 
 import static org.mockito.Matchers.any;
 import static org.mockito.Matchers.eq;
@@ -201,8 +201,7 @@ public class LocationOnSubscribeTest extends BaseOnSubscribeTest {
         setupBaseFlowableSuccess(single);
 
         Flowable.create(single, BackpressureStrategy.BUFFER).test()
-                .assertValue(location)
-                .assertNotTerminated();
+                .assertValue(location);
 
     }
 

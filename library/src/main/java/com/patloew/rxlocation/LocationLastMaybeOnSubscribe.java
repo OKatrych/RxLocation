@@ -1,12 +1,12 @@
 package com.patloew.rxlocation;
 
 import android.location.Location;
-import android.support.annotation.NonNull;
+import androidx.annotation.NonNull;
 
 import com.google.android.gms.common.api.GoogleApiClient;
 import com.google.android.gms.location.LocationServices;
 
-import io.reactivex.MaybeEmitter;
+import io.reactivex.rxjava3.core.MaybeEmitter;
 
 /* Copyright 2016 Patrick Löwenstein
  *

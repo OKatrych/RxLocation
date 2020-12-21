@@ -1,7 +1,7 @@
 package com.patloew.rxlocation;
 
 import android.content.Context;
-import android.support.annotation.CallSuper;
+import androidx.annotation.CallSuper;
 
 import org.mockito.Mock;
 

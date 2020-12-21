@@ -2,7 +2,7 @@ package com.patloew.rxlocation;
 
 import android.content.Context;
 import android.os.Bundle;
-import android.support.annotation.NonNull;
+import androidx.annotation.NonNull;
 
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.api.Api;
@@ -11,8 +11,8 @@ import com.google.android.gms.common.api.Scope;
 
 import java.util.concurrent.TimeUnit;
 
-import io.reactivex.FlowableEmitter;
-import io.reactivex.FlowableOnSubscribe;
+import io.reactivex.rxjava3.core.FlowableEmitter;
+import io.reactivex.rxjava3.core.FlowableOnSubscribe;
 
 /* Copyright (C) 2015 Michał Charmas (http://blog.charmas.pl)
  *

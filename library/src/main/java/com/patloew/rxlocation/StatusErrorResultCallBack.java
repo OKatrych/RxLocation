@@ -1,11 +1,11 @@
 package com.patloew.rxlocation;
 
-import android.support.annotation.NonNull;
+import androidx.annotation.NonNull;
 
 import com.google.android.gms.common.api.ResultCallback;
 import com.google.android.gms.common.api.Status;
 
-import io.reactivex.FlowableEmitter;
+import io.reactivex.rxjava3.core.FlowableEmitter;
 
 /* Copyright 2016 Patrick Löwenstein
  *

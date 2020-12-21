@@ -16,7 +16,7 @@ import org.powermock.api.mockito.PowerMockito;
 import org.powermock.core.classloader.annotations.PrepareOnlyThisForTest;
 import org.powermock.modules.junit4.PowerMockRunner;
 
-import io.reactivex.Single;
+import io.reactivex.rxjava3.core.Single;
 
 import static junit.framework.Assert.assertEquals;
 import static org.mockito.Mockito.times;
