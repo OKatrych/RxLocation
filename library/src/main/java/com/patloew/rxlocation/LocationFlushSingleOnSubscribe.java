@@ -1,6 +1,6 @@
 package com.patloew.rxlocation;
 
-import android.support.annotation.NonNull;
+import androidx.annotation.NonNull;
 
 import com.google.android.gms.common.api.GoogleApiClient;
 import com.google.android.gms.common.api.Status;
@@ -8,7 +8,7 @@ import com.google.android.gms.location.LocationServices;
 
 import java.util.concurrent.TimeUnit;
 
-import io.reactivex.SingleEmitter;
+import io.reactivex.rxjava3.core.SingleEmitter;
 
 /* Copyright 2016 Patrick Löwenstein
  *

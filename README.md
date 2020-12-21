@@ -1,12 +1,14 @@
 # Reactive Location API Library for Android
 
-[![Build Status](https://travis-ci.org/patloew/RxLocation.svg?branch=master)](https://travis-ci.org/patloew/RxLocation) [![codecov](https://codecov.io/gh/patloew/RxLocation/branch/master/graph/badge.svg)](https://codecov.io/gh/patloew/RxLocation) [![Download](https://api.bintray.com/packages/patloew/maven/RxLocation/images/download.svg) ](https://bintray.com/patloew/maven/RxLocation/_latestVersion) [![API](https://img.shields.io/badge/API-14%2B-brightgreen.svg?style=flat)](https://android-arsenal.com/api?level=14)
+[![API](https://img.shields.io/badge/API-14%2B-brightgreen.svg?style=flat)](https://android-arsenal.com/api?level=14)
+[![](https://jitpack.io/v/OKatrych/RxLocation.svg)](https://jitpack.io/#OKatrych/RxLocation)
 
-**This library is now deprecated and not maintained anymore. Please switch to the [CoLocation](https://github.com/patloew/CoLocation) library.**
+**RxLocation with RxJava 3.0 support**
 
-This library wraps the Location APIs in [RxJava 2](https://github.com/ReactiveX/RxJava/tree/2.x) Observables, Singles, Maybes and Completables. No more managing GoogleApiClients! Also, the resolution of the location settings check is optionally handled by the lib.
+This library wraps the Location APIs in [RxJava 3](https://github.com/ReactiveX/RxJava/tree/3.x) Observables, Singles, Maybes and Completables. No more managing GoogleApiClients! Also, the resolution of the location settings check is optionally handled by the lib.
 
 For [RxJava 1](https://github.com/ReactiveX/RxJava/tree/1.x), please take a look at the [Android-ReactiveLocation](https://github.com/mcharmas/Android-ReactiveLocation) library by Michał Charmas.
+For [RxJava 2](https://github.com/ReactiveX/RxJava/tree/2.x), please take a look at the [RxLocation](https://github.com/patloew/RxLocation).
 
 # Usage
 
@@ -78,12 +80,19 @@ A basic sample app is available in the `sample` project.
 
 # Setup
 
-The lib is available on jCenter. Add the following to your `build.gradle`:
+Add the following to your `build.gradle`:
 
 ```groovy
+allprojects {
+    repositories {
+        ...
+        maven { url 'https://jitpack.io' }
+    }
+}
+
 dependencies {
-    compile 'com.patloew.rxlocation:rxlocation:1.0.5'
-    compile 'com.google.android.gms:play-services-location:15.0.0'
+    implementation 'com.github.OKatrych:RxLocation:v1.0.6'
+    implementation 'com.google.android.gms:play-services-location:17.1.0'
 }
 ```
 
@@ -108,10 +117,6 @@ When unit testing your app's classes, RxLocation behavior can be mocked easily. 
 # Credits
 
 The code for managing the GoogleApiClient was adapted from the [Android-ReactiveLocation](https://github.com/mcharmas/Android-ReactiveLocation) library by Michał Charmas, which is licensed under the Apache License, Version 2.0.
-
-# Donations
-
-If you like the library and want to support the creator for development/maintenance, you can make a donation in Bitcoin to `bc1q5uejfyl2kskhhveg7lx4fcwgv8hz88r92yzjsu`. Thank you!
 
 # License
 

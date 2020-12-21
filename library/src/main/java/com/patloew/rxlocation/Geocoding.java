@@ -4,14 +4,14 @@ import android.content.Context;
 import android.location.Address;
 import android.location.Geocoder;
 import android.location.Location;
-import android.support.annotation.NonNull;
+import androidx.annotation.NonNull;
 
 import java.util.List;
 import java.util.Locale;
 
-import io.reactivex.Maybe;
-import io.reactivex.Single;
-import io.reactivex.functions.Function;
+import io.reactivex.rxjava3.core.Maybe;
+import io.reactivex.rxjava3.core.Single;
+import io.reactivex.rxjava3.functions.Function;
 
 /* Copyright 2016 Patrick Löwenstein
  *
@@ -28,7 +28,8 @@ import io.reactivex.functions.Function;
  * limitations under the License. */
 public class Geocoding {
 
-    private static final Function<List<Address>, Maybe<Address>> ADDRESS_MAYBE_FUNCTION = addresses -> addresses.isEmpty() ? Maybe.empty(): Maybe.just(addresses.get(0));
+    private static final Function<List<Address>, Maybe<Address>>
+        ADDRESS_MAYBE_FUNCTION = addresses -> addresses.isEmpty() ? Maybe.empty(): Maybe.just(addresses.get(0));
 
     private final Context context;
 

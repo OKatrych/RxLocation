@@ -17,7 +17,7 @@ import java.util.Map;
 import java.util.UUID;
 import java.util.concurrent.TimeUnit;
 
-import io.reactivex.SingleEmitter;
+import io.reactivex.rxjava3.core.SingleEmitter;
 
 /* Copyright 2016 Patrick Löwenstein
  *

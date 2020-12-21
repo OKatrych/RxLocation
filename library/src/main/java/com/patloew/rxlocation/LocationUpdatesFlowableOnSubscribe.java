@@ -2,7 +2,7 @@ package com.patloew.rxlocation;
 
 import android.location.Location;
 import android.os.Looper;
-import android.support.annotation.NonNull;
+import androidx.annotation.NonNull;
 
 import com.google.android.gms.common.api.GoogleApiClient;
 import com.google.android.gms.location.LocationListener;
@@ -11,7 +11,7 @@ import com.google.android.gms.location.LocationServices;
 
 import java.util.concurrent.TimeUnit;
 
-import io.reactivex.FlowableEmitter;
+import io.reactivex.rxjava3.core.FlowableEmitter;
 
 /* Copyright 2016 Patrick Löwenstein
  *

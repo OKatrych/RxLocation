@@ -2,8 +2,8 @@ package com.patloew.rxlocation;
 
 import android.Manifest;
 import android.app.PendingIntent;
-import android.support.annotation.NonNull;
-import android.support.annotation.RequiresPermission;
+import androidx.annotation.NonNull;
+import androidx.annotation.RequiresPermission;
 
 import com.google.android.gms.common.api.Status;
 import com.google.android.gms.location.GeofencingRequest;
@@ -11,7 +11,7 @@ import com.google.android.gms.location.GeofencingRequest;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
-import io.reactivex.Single;
+import io.reactivex.rxjava3.core.Single;
 
 /* Copyright 2016 Patrick Löwenstein
  *
