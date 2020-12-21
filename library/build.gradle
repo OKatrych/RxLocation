@@ -2,7 +2,7 @@ apply plugin: 'com.android.library'
 apply plugin: 'com.jfrog.bintray'
 
 group = 'com.patloew.rxlocation'
-version = '1.0.5'
+version = '1.0.6'
 project.archivesBaseName = 'rxlocation'
 
 android {
